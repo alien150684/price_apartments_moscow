@@ -3,8 +3,8 @@ from airflow.decorators import dag, task
 from steps.messages import send_telegram_success_message, send_telegram_failure_message
 
 @dag(
-    schedule='@once',
-    start_date=pendulum.datetime(2025, 3, 18, tz="UTC"),
+    schedule='@weekly',
+    start_date=pendulum.datetime(2025, 3, 1, tz="UTC"),
     catchup=False,
     tags=["ETL"],
     on_success_callback=send_telegram_success_message,
