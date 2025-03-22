@@ -1,0 +1,14 @@
+# params.yaml
+# retrain: True
+index_col: 'id'
+iterations: 1000
+learning_rate: 0.3
+depth: 4
+verbose: 0 # verbose=1 для вывода информации о процессе обучения
+n_splits: 5 # количество частей, на которое разбиваем выборку
+metrics: ['neg_mean_squared_error', 'neg_mean_absolute_error']  # список метрик
+n_jobs: -1 # использовать все доступные ядра процессора
+error_score: 'raise' # кросс-валидация выполнится, но оценка для фолда, где возникла ошибка, будет NaN
+
+
+

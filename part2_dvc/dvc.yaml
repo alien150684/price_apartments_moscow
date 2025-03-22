@@ -1,0 +1,27 @@
+# dvc.yaml
+stages:
+  get_data:
+    cmd: python scripts/data.py
+    deps:
+      - scripts/data.py
+    params:
+      - index_col
+    outs:
+      - data/initial_data.csv
+  evaluate_and_fit_model:
+    cmd: python scripts/fit.py
+    deps:
+      - data/initial_data.csv
+      - scripts/fit.py
+    params:
+      - iterations
+      - learning_rate
+      - depth
+      - verbose
+      - n_splits
+      - metrics
+      - n_jobs
+      - error_score
+    outs:
+      - models/fitted_model.pkl
+      - cv_results/cv_res.json
