@@ -60,7 +60,6 @@ def prepare_prices_dataset_clean():
             
     @task()
     def extract(**kwargs):
-        import pandas as pd
         hook = PostgresHook('destination_db')
         conn = hook.get_conn()
         sql_query = """

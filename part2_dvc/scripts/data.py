@@ -19,7 +19,6 @@ def create_connection():
     username = os.environ.get('DB_DESTINATION_USER')
     password = os.environ.get('DB_DESTINATION_PASSWORD')
     
-    print(f'postgresql://{username}:{password}@{host}:{port}/{db}')
     conn = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{db}', connect_args={'sslmode':'require'})
     return conn
 
