@@ -45,13 +45,25 @@ stages:
     outs:
     - path: cv_results/cv_res.json
       hash: md5
-      md5: 590755f5e32b51cc318f4b45f69f8848
+      md5: 1af29ef23f41f5503a76e16aa654de53
       size: 152
+      cloud:
+        my_storage:
+          etag: 1af29ef23f41f5503a76e16aa654de53
+          version_id: 0006333ADA7301A7
     - path: data/input_features.json
       hash: md5
       md5: 12655b97774fb43231281f713e64aa78
       size: 333
+      cloud:
+        my_storage:
+          etag: 12655b97774fb43231281f713e64aa78
+          version_id: 0006333ADA725701
     - path: models/fitted_model.pkl
       hash: md5
-      md5: 13fb24d93f4080a33538abb9eb11f2dc
+      md5: 314ef8146ef3a1fdcd28a2f740dc2d76
       size: 370591
+      cloud:
+        my_storage:
+          etag: 314ef8146ef3a1fdcd28a2f740dc2d76
+          version_id: 0006333ADA72F869

@@ -3,4 +3,6 @@
 ['remote "my_storage"']
     url = s3://s3-student-mle-20250226-e7b4c7010d
     endpointurl = https://storage.yandexcloud.net
+    access_key_id = YCAJE26tCTzKqvgfV8G9aEd-k
+    secret_access_key = YCO8miShSnB41jtyLQX7FRH_oz50dyFmPjEBE2uS
     version_aware = true
