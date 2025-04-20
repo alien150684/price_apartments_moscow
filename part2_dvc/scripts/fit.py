@@ -60,6 +60,13 @@ def evaluate_and_fit_model():
     with open('cv_results/cv_res.json', "w") as f:
         json.dump(cv_res_dict, f, indent=4)  # indent=4 для красивого форматирования
 
+    # сохранение результата кросс-валидации в JSON
+    input_features_dict = dict()
+    input_features_dict['cat_features'] = categorical_features
+    input_features_dict['num_features'] = numerical_features
+    with open('data/input_features.json', "w") as f:
+        json.dump(input_features_dict, f, indent=4)  # indent=4 для красивого форматирования
+
     # Обучение модели на ВСЕХ данных ПОСЛЕ кросс-валидации
     model.fit(X, y)
     # сохранение модели в файл
