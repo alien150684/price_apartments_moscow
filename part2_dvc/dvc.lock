@@ -45,9 +45,13 @@ stages:
     outs:
     - path: cv_results/cv_res.json
       hash: md5
-      md5: c5bb0ad7e84c369f37c4b29a3ceceadb
-      size: 153
+      md5: 590755f5e32b51cc318f4b45f69f8848
+      size: 152
+    - path: data/input_features.json
+      hash: md5
+      md5: 12655b97774fb43231281f713e64aa78
+      size: 333
     - path: models/fitted_model.pkl
       hash: md5
-      md5: fd25f4c52a6b5fbff2a7b3b3c16647ae
+      md5: 13fb24d93f4080a33538abb9eb11f2dc
       size: 370591

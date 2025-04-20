@@ -23,5 +23,6 @@ stages:
       - n_jobs
       - error_score
     outs:
+      - data/input_features.json
       - models/fitted_model.pkl
       - cv_results/cv_res.json
